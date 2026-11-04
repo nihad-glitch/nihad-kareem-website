@@ -1,0 +1,13 @@
+media: media
+content:
+  - name: articles
+    label: Articles
+    type: collection
+    path: articles
+    fields:
+      - name: title
+        label: Title
+        type: string
+      - name: body
+        label: Article
+        type: rich-text
