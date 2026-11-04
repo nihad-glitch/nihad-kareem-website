@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="ku" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Nihad Aras Kareem — Writer, political commentator and independent news platform.">
+<title>Nihad Aras Kareem | نووسەر و ڕاڤەکاری سیاسی</title>
+<style>
+:root{--navy:#101d35;--navy2:#182b49;--gold:#c9a052;--ink:#182235;--muted:#667085;--paper:#f4f6f9;--white:#fff}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,"Noto Sans Arabic",sans-serif;line-height:1.7}
+a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}
+header{background:var(--navy);color:white;border-bottom:3px solid var(--gold)}
+.top{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:18px 0;flex-wrap:wrap}
+.brand{font-weight:900;letter-spacing:1.4px;font-size:21px}.brand span{color:var(--gold)}.tag{font-size:10px;letter-spacing:2px;color:#cbd5e1}
+.tools{display:flex;gap:7px}.tools button,.nav button{border:0;background:transparent;color:inherit;cursor:pointer;font-weight:700}
+.tools button{border:1px solid #65738a;border-radius:7px;padding:6px 10px}.tools button.active{background:var(--gold);color:var(--navy);border-color:var(--gold)}
+nav{display:flex;gap:24px;flex-wrap:wrap;padding:0 0 15px}nav button{font-size:14px}
+.hero{background:linear-gradient(110deg,rgba(16,29,53,.98),rgba(24,43,73,.92));color:white;padding:54px 0}
+.hero-grid{display:grid;grid-template-columns:1.4fr .8fr;gap:44px;align-items:center}
+.eyebrow{color:var(--gold);font-size:12px;font-weight:800;letter-spacing:2px}
+h1{font-size:clamp(32px,5vw,55px);line-height:1.2;margin:12px 0}
+.role{font-size:20px;color:var(--gold);font-weight:700}.intro{max-width:620px;color:#dce3ed}
+.portrait{width:min(100%,330px);aspect-ratio:4/5;object-fit:cover;object-position:center 25%;border:5px solid rgba(201,160,82,.85);border-radius:18px;box-shadow:0 18px 45px #0005;justify-self:center}
+.section{padding:38px 0}.section-head{display:flex;align-items:center;justify-content:space-between;border-bottom:2px solid var(--gold);padding-bottom:10px;margin-bottom:20px}
+h2{margin:0;font-size:25px}.kicker{font-size:11px;color:var(--muted);letter-spacing:1px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{background:white;border-radius:12px;padding:22px;box-shadow:0 5px 20px #14233b0b;border:1px solid #e8ebf0}
+.icon{font-size:26px}.card h3{margin:9px 0 5px}.card p{margin:0;color:var(--muted);font-size:14px}
+.about{background:white;border-radius:14px;padding:25px;border-right:4px solid var(--gold)}
+footer{background:var(--navy);color:white;padding:28px 0;margin-top:20px}footer .gold{color:var(--gold)}footer small{color:#cbd5e1}
+.notice{font-size:12px;color:var(--muted);margin-top:18px}
+[dir="ltr"] .about{border-right:0;border-left:4px solid var(--gold)}
+@media(max-width:720px){.hero{padding:34px 0}.hero-grid{grid-template-columns:1fr;gap:25px}.portrait{width:min(72%,280px);grid-row:1}.cards{grid-template-columns:1fr}nav{gap:14px}.top{align-items:flex-start}}
+.post-card{display:grid;grid-template-columns:minmax(0,340px) 1fr;gap:0;background:white;border-radius:14px;overflow:hidden;border:1px solid #e8ebf0;box-shadow:0 5px 20px #14233b0b;transition:box-shadow .2s,transform .2s}.post-card:hover,.post-card:focus-visible{box-shadow:0 12px 30px #14233b22;transform:translateY(-2px)}
+.post-card img{width:100%;height:100%;aspect-ratio:1/1;object-fit:cover;display:block}.post-card-body{padding:24px 26px;display:flex;flex-direction:column;gap:6px}
+.post-card h3{margin:0;font-size:22px;line-height:1.4;color:var(--navy)}.post-card p{margin:0;color:var(--muted)}.post-card small{color:var(--muted)}
+.read-more{margin-top:auto;padding-top:10px;color:var(--gold);font-weight:800}
+@media(max-width:720px){.post-card{grid-template-columns:1fr}.post-card img{height:auto}.post-card-body{padding:18px}.post-card h3{font-size:19px}}
+.fb-btn{display:inline-flex;align-items:center;gap:9px;background:#1877f2;color:#fff;font-weight:700;padding:10px 18px;border-radius:8px;margin-top:6px;transition:background .2s}.fb-btn:hover,.fb-btn:focus-visible{background:#0f5fcc}
+.fb-foot{display:inline-flex;align-items:center;gap:7px;color:var(--gold);font-size:14px;font-weight:700;margin:8px 0 4px}.fb-foot:hover{color:#fff}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+ <div class="top">
+  <div><div class="brand">NIHAD <span>KAREEM</span></div><div class="tag">JOURNALISM · ANALYSIS · NEWS</div></div>
+  <div class="tools" aria-label="Language selector"><button class="active" data-lang="ku">کوردی</button><button data-lang="en">EN</button><button data-lang="ar">العربية</button></div>
+ </div>
+ <nav>
+  <button data-scroll="home" data-i18n="navHome">سەرەکی</button>
+  <button data-scroll="articles" data-i18n="navArticles">وتارەکان</button>
+  <button data-scroll="topics" data-i18n="navTopics">بەشەکان</button>
+  <button data-scroll="about" data-i18n="navAbout">دەربارە</button>
+  <button data-scroll="contact" data-i18n="navContact">پەیوەندی</button>
+ </nav>
+</div></header>
+<main>
+<section class="hero" id="home"><div class="wrap hero-grid">
+ <div>
+  <div class="eyebrow" data-i18n="eyebrow">ماڵپەڕی فەرمی</div>
+  <h1 data-i18n="name">نیهاد ئاراس کەریم</h1>
+  <div class="role" data-i18n="role">نووسەر و ڕاڤەکاری سیاسی</div>
+  <p class="intro" data-i18n="intro">هەواڵ، ڕاپۆرت و شیکردنەوەی سیاسی لە بەریتانیا و جیهان؛ بە دیدێکی سەربەخۆ و گرنگیدان بە زانیاریی پشتڕاستکراوە.</p>
+ </div>
+ <img class="portrait" src="assets/nihad-aras-kareem.jpeg" alt="Nihad Aras Kareem">
+</div></section>
+<section class="section wrap" id="articles">
+ <div class="section-head"><h2 data-i18n="latestTitle">نوێترین وتارەکان</h2><span class="kicker">ARTICLES</span></div>
+ <a class="post-card" href="articles/shabana-mahmood-immigration.html" data-article-link>
+  <img src="assets/articles/shabana-mahmood-immigration.jpeg" width="2048" height="2048" alt="Shabana Mahmood — Immigration &amp; Asylum Policy" loading="lazy">
+  <div class="post-card-body">
+   <span class="eyebrow" data-i18n="a1Cat">ڕاڤەکاری سیاسی</span>
+   <h3 data-i18n="a1Title">بڕیارە نوێکانی شابانا مەحمود؛ قسە زۆرە، بەڵام جێبەجێکردن کەی؟</h3>
+   <p data-i18n="a1Excerpt">ئایا ئەم بڕیارانە بەڕاستی چوونەتە بواری جێبەجێکردن، یان تەنها ڕاگەیاندن و قسەی میدیایی بوون؟</p>
+   <small data-i18n="a1By">نووسەر: نیهاد ئاراس کەریم</small>
+   <span class="read-more" data-i18n="readMore">خوێندنەوەی وتار</span>
+  </div>
+ </a>
+</section>
+<section class="section wrap" id="topics">
+ <div class="section-head"><h2 data-i18n="topicsTitle">بەشەکانی ماڵپەڕ</h2><span class="kicker">EDITORIAL</span></div>
+ <div class="cards">
+  <article class="card"><div class="icon">📰</div><h3 data-i18n="newsTitle">هەواڵ</h3><p data-i18n="newsText">نوێترین هەواڵ و ڕاپۆرتە پشتڕاستکراوەکان.</p></article>
+  <article class="card"><div class="icon">⚖️</div><h3 data-i18n="analysisTitle">ڕاڤەکاری سیاسی</h3><p data-i18n="analysisText">شیکردنەوەی سیاسەت و ڕووداوە گرنگەکان.</p></article>
+  <article class="card"><div class="icon">✍️</div><h3 data-i18n="articlesTitle">وتار و ڕاپۆرت</h3><p data-i18n="articlesText">نووسین و ڕاپۆرتە تایبەتییەکانی نیهاد ئاراس کەریم.</p></article>
+ </div>
+</section>
+<section class="section wrap" id="about">
+ <div class="section-head"><h2 data-i18n="aboutTitle">دەربارەی من</h2></div>
+ <div class="about"><strong data-i18n="aboutName">نیهاد ئاراس کەریم</strong><p data-i18n="aboutText">نووسەر و ڕاڤەکاری سیاسی. ئەم ماڵپەڕە شوێنێکە بۆ پێشکەشکردنی هەواڵ، وتار و شیکردنەوە بە زمانی کوردی، ئینگلیزی و عەرەبی.</p></div>
+</section>
+<section class="section wrap" id="contact">
+ <div class="section-head"><h2 data-i18n="contactTitle">پەیوەندی</h2></div>
+ <div class="card"><p data-i18n="contactText">بۆ پەیوەندی و هاوکاریی ڕۆژنامەوانی، زانیاریی پەیوەندی دواتر لێرە زیاد دەکرێت.</p><a class="fb-btn" href="https://www.facebook.com/share/18j41AXFFe/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.07C24 5.41 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.04V9.41c0-3.02 1.8-4.7 4.54-4.7 1.31 0 2.68.24 2.68.24v2.97h-1.5c-1.5 0-1.96.93-1.96 1.89v2.26h3.32l-.53 3.5h-2.8V24C19.62 23.1 24 18.1 24 12.07"/></svg><span data-i18n="facebookBtn">لە فەیسبووک فۆڵۆم بکە</span></a><p class="notice" data-i18n="domainNote">دۆمەینی پێشنیارکراو: nihadkareem.com — پێویستە تۆمارکردن و بەردەستبوونی بپشکنرێت.</p></div>
+</section>
+</main>
+<footer><div class="wrap"><div class="brand">NIHAD <span class="gold">KAREEM</span></div><small data-i18n="footer">ماڵپەڕی سەربەخۆی هەواڵ و ڕاڤەکاری سیاسی</small><br><a class="fb-foot" href="https://www.facebook.com/share/18j41AXFFe/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.07C24 5.41 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.04V9.41c0-3.02 1.8-4.7 4.54-4.7 1.31 0 2.68.24 2.68.24v2.97h-1.5c-1.5 0-1.96.93-1.96 1.89v2.26h3.32l-.53 3.5h-2.8V24C19.62 23.1 24 18.1 24 12.07"/></svg><span>Facebook</span></a><br><small>© <span id="year"></span> Nihad Aras Kareem</small></div></footer>
+<script>
+const translations={
+ku:{navHome:"سەرەکی",navArticles:"وتارەکان",latestTitle:"نوێترین وتارەکان",a1Cat:"ڕاڤەکاری سیاسی",a1Title:"بڕیارە نوێکانی شابانا مەحمود؛ قسە زۆرە، بەڵام جێبەجێکردن کەی؟",a1Excerpt:"ئایا ئەم بڕیارانە بەڕاستی چوونەتە بواری جێبەجێکردن، یان تەنها ڕاگەیاندن و قسەی میدیایی بوون؟",a1By:"نووسەر: نیهاد ئاراس کەریم",readMore:"خوێندنەوەی وتار ←",navTopics:"بەشەکان",navAbout:"دەربارە",navContact:"پەیوەندی",eyebrow:"ماڵپەڕی فەرمی",name:"نیهاد ئاراس کەریم",role:"نووسەر و ڕاڤەکاری سیاسی",intro:"هەواڵ، ڕاپۆرت و شیکردنەوەی سیاسی لە بەریتانیا و جیهان؛ بە دیدێکی سەربەخۆ و گرنگیدان بە زانیاریی پشتڕاستکراوە.",topicsTitle:"بەشەکانی ماڵپەڕ",newsTitle:"هەواڵ",newsText:"نوێترین هەواڵ و ڕاپۆرتە پشتڕاستکراوەکان.",analysisTitle:"ڕاڤەکاری سیاسی",analysisText:"شیکردنەوەی سیاسەت و ڕووداوە گرنگەکان.",articlesTitle:"وتار و ڕاپۆرت",articlesText:"نووسین و ڕاپۆرتە تایبەتییەکانی نیهاد ئاراس کەریم.",aboutTitle:"دەربارەی من",aboutName:"نیهاد ئاراس کەریم",aboutText:"نووسەر و ڕاڤەکاری سیاسی. ئەم ماڵپەڕە شوێنێکە بۆ پێشکەشکردنی هەواڵ، وتار و شیکردنەوە بە زمانی کوردی، ئینگلیزی و عەرەبی.",contactTitle:"پەیوەندی",contactText:"بۆ پەیوەندی و هاوکاریی ڕۆژنامەوانی، زانیاریی پەیوەندی دواتر لێرە زیاد دەکرێت.",domainNote:"دۆمەینی پێشنیارکراو: nihadkareem.com — پێویستە تۆمارکردن و بەردەستبوونی بپشکنرێت.",footer:"ماڵپەڕی سەربەخۆی هەواڵ و ڕاڤەکاری سیاسی",facebookBtn:"لە فەیسبووک فۆڵۆم بکە"},
+en:{navHome:"Home",navArticles:"Articles",latestTitle:"Latest articles",a1Cat:"POLITICAL ANALYSIS",a1Title:"Shabana Mahmood’s New Immigration Decisions: Plenty of Announcements, But When Will They Be Implemented?",a1Excerpt:"Have these decisions actually come into force, or are they still announcements and political statements?",a1By:"By Nihad Aras Kareem",readMore:"Read article →",navTopics:"Sections",navAbout:"About",navContact:"Contact",eyebrow:"OFFICIAL WEBSITE",name:"Nihad Aras Kareem",role:"Writer & Political Commentator",intro:"News, reports and political analysis from the UK and around the world, with an independent perspective and a focus on verified information.",topicsTitle:"Explore the website",newsTitle:"News",newsText:"Latest news and verified reports.",analysisTitle:"Political analysis",analysisText:"Commentary on policy and important developments.",articlesTitle:"Articles & reports",articlesText:"Original writing and reports by Nihad Aras Kareem.",aboutTitle:"About me",aboutName:"Nihad Aras Kareem",aboutText:"Writer and political commentator. This website shares news, articles and analysis in Kurdish, English and Arabic.",contactTitle:"Contact",contactText:"Contact details for journalism enquiries and collaboration will be added here.",domainNote:"Proposed domain: nihadkareem.com — registration and availability must be checked.",footer:"Independent news and political commentary",facebookBtn:"Follow me on Facebook"},
+ar:{navHome:"الرئيسية",navArticles:"المقالات",latestTitle:"أحدث المقالات",a1Cat:"تحليلات سياسية",a1Title:"قرارات شبانة محمود الجديدة بشأن الهجرة؛ تصريحات كثيرة، ولكن متى يبدأ التنفيذ؟",a1Excerpt:"هل دخلت هذه القرارات حيز التنفيذ فعلياً، أم أنها لا تزال مجرد إعلانات وتصريحات إعلامية؟",a1By:"بقلم: نهاد آراس كريم",readMore:"اقرأ المقال ←",navTopics:"الأقسام",navAbout:"من أنا",navContact:"اتصل بي",eyebrow:"الموقع الرسمي",name:"نهاد آراس كريم",role:"كاتب ومحلل سياسي",intro:"أخبار وتقارير وتحليلات سياسية من بريطانيا والعالم، برؤية مستقلة واهتمام بالمعلومات الموثوقة.",topicsTitle:"أقسام الموقع",newsTitle:"الأخبار",newsText:"آخر الأخبار والتقارير الموثوقة.",analysisTitle:"تحليلات سياسية",analysisText:"قراءة السياسات والتطورات المهمة.",articlesTitle:"مقالات وتقارير",articlesText:"كتابات وتقارير خاصة بنهاد آراس كريم.",aboutTitle:"نبذة عني",aboutName:"نهاد آراس كريم",aboutText:"كاتب ومحلل سياسي. يقدم هذا الموقع الأخبار والمقالات والتحليلات باللغات الكردية والإنجليزية والعربية.",contactTitle:"اتصل بي",contactText:"ستضاف هنا لاحقاً معلومات التواصل والاستفسارات الصحفية.",domainNote:"النطاق المقترح: nihadkareem.com — يجب التحقق من توفره وتسجيله.",footer:"منصة مستقلة للأخبار والتحليل السياسي",facebookBtn:"تابعني على فيسبوك"}
+};
+function setLang(l){if(!translations[l])l="ku";try{localStorage.setItem("nk-lang",l)}catch(e){}document.querySelectorAll("[data-article-link]").forEach(a=>a.href="articles/shabana-mahmood-immigration.html?lang="+l);document.documentElement.lang=l;document.documentElement.dir=l==="en"?"ltr":"rtl";document.querySelectorAll("[data-i18n]").forEach(e=>e.textContent=translations[l][e.dataset.i18n]);document.querySelectorAll("[data-lang]").forEach(b=>b.classList.toggle("active",b.dataset.lang===l))}
+document.querySelectorAll("[data-lang]").forEach(b=>b.addEventListener("click",()=>setLang(b.dataset.lang)));
+document.querySelectorAll("[data-scroll]").forEach(b=>b.addEventListener("click",()=>document.getElementById(b.dataset.scroll).scrollIntoView({behavior:"smooth"})));
+(function(){let l=new URLSearchParams(location.search).get("lang");if(!l){try{l=localStorage.getItem("nk-lang")}catch(e){}}if(l&&l!=="ku")setLang(l);if(location.hash){const t=document.getElementById(location.hash.slice(1));if(t)t.scrollIntoView()}})();
+document.getElementById("year").textContent=new Date().getFullYear();
+</script>
+</body></html>
