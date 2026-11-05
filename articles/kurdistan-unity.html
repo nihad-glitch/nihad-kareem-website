@@ -7,31 +7,34 @@
 <meta name="description" content="ڕاڤەکاری سیاسی لەسەر یەکێتیی حکومەتی هەرێمی کوردستان">
 <title>کوردستان و یەکێتیی حکومەت | نیهاد ئاراس کەریم</title>
 <style>
+:root{--navy:#101d35;--gold:#c9a052;--ink:#182235;--muted:#667085;--paper:#f4f6f9}
 *{box-sizing:border-box}
-body{margin:0;background:#f4f6fa;color:#17243a;font-family:Arial,sans-serif;line-height:2}
-header{background:#071b34;color:white;padding:18px 5%;border-bottom:4px solid #e8ad39;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:15px}
-.brand{font-size:25px;font-weight:bold}
-.brand span{color:#e8ad39}
-.languages{display:flex;gap:8px}
-.languages button{border:1px solid #64748b;background:transparent;color:white;padding:9px 15px;border-radius:7px;cursor:pointer;font-size:15px}
-.languages button.active{background:#e8ad39;color:#071b34;font-weight:bold}
-main{max-width:1050px;margin:35px auto;padding:0 18px}
-.article{background:white;padding:30px;border-radius:12px;box-shadow:0 4px 20px #10243a12}
-.category{display:inline-block;background:#fff0cf;color:#81530b;padding:5px 14px;border-radius:6px;font-weight:bold}
-h1{color:#071b34;font-size:clamp(27px,4vw,43px);line-height:1.5;margin:18px 0}
-.meta{color:#718096;font-size:14px}
-.hero{width:100%;max-height:490px;object-fit:cover;border-radius:10px;margin:22px 0}
-.article-text{font-size:18px}
-.article-text h2{color:#0b3157;font-size:24px;margin-top:30px}
-.article-text p{margin:14px 0}
-.author{margin-top:35px;padding:18px;border-right:4px solid #e8ad39;background:#f3f6fa;font-weight:bold}
-footer{text-align:center;padding:25px;background:#071b34;color:white}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,"Noto Sans Arabic",sans-serif;line-height:1.9}
+.wrap{width:min(900px,92%);margin:auto}
+header{background:var(--navy);color:white;border-bottom:3px solid var(--gold);padding:18px 0}
+.top{display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap}
+.brand{font-weight:900;letter-spacing:1px;font-size:20px}
+.brand span{color:var(--gold)}
+.tools{display:flex;gap:7px}
+.tools button{border:1px solid #65738a;background:transparent;color:white;border-radius:7px;padding:7px 11px;font-weight:bold;cursor:pointer}
+.tools button.active{background:var(--gold);color:var(--navy);border-color:var(--gold)}
+main{background:white;margin:32px auto;padding:clamp(22px,5vw,48px);border-radius:14px;box-shadow:0 5px 24px #14233b0d}
+.back{display:inline-block;color:var(--gold);font-weight:bold;margin-bottom:18px}
+.category{display:inline-block;color:#986f27;font-weight:bold;margin-bottom:12px}
+h1{font-size:clamp(27px,4vw,39px);line-height:1.35;color:var(--navy);margin:0 0 12px}
+.meta{color:var(--muted);font-size:14px;border-bottom:1px solid #e8ebf0;padding-bottom:20px;margin-bottom:25px}
+.hero{width:100%;max-height:490px;object-fit:cover;border-radius:10px;margin:0 0 25px}
+.article-text{font-size:17px}
+.article-text h2{color:var(--navy);font-size:23px;margin-top:28px}
+.article-text p{margin:0 0 18px}
+.author{margin-top:28px;padding-top:18px;border-top:1px solid #e8ebf0;font-size:14px;color:var(--muted);font-weight:bold}
+footer{text-align:center;color:var(--muted);padding:10px 0 30px;font-size:13px}
+[dir="ltr"] main{text-align:left}
 [hidden]{display:none!important}
 @media(max-width:600px){
-header{justify-content:center;text-align:center}
-.article{padding:18px}
+main{margin:18px auto;padding:22px 18px}
+.top{align-items:flex-start}
 .article-text{font-size:16px}
-.languages button{padding:8px 11px}
 }
 </style>
 </head>
@@ -46,7 +49,8 @@ header{justify-content:center;text-align:center}
   </div>
 </header>
 
-<main>
+<main class="wrap">
+<a class="back" href="../index.html#articles">← گەڕانەوە بۆ وتارەکان</a>
 <article class="article">
 
 <section id="ku">
