@@ -4,137 +4,333 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="ڕاڤەکاری سیاسی لەسەر یەکێتیی حکومەتی هەرێمی کوردستان">
-<title>کوردستان و یەکێتیی حکومەت | نیهاد ئاراس کەریم</title>
+<meta name="description" content="کوردستان لە نێوان هاوپەیمانیی سیاسی و دابەشبوونی دەسەڵاتدا — نیهاد ئاراس کەریم">
+<title>کوردستان لە نێوان هاوپەیمانیی سیاسی و دابەشبوونی دەسەڵاتدا | NIHAD KAREEM</title>
+
 <style>
-:root{--navy:#101d35;--gold:#c9a052;--ink:#182235;--muted:#667085;--paper:#f4f6f9}
+:root{
+  --navy:#101d35;
+  --gold:#c9a052;
+  --ink:#182235;
+  --muted:#667085;
+  --paper:#f4f6f9;
+}
 *{box-sizing:border-box}
-body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,"Noto Sans Arabic",sans-serif;line-height:1.9}
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:Arial,"Noto Sans Arabic",sans-serif;
+  line-height:1.9;
+}
 .wrap{width:min(900px,92%);margin:auto}
-header{background:var(--navy);color:white;border-bottom:3px solid var(--gold);padding:18px 0}
-.top{display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap}
-.brand{font-weight:900;letter-spacing:1px;font-size:20px}
+
+header{
+  background:var(--navy);
+  color:white;
+  border-bottom:3px solid var(--gold);
+  padding:16px 0;
+}
+.top{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:14px;
+  flex-wrap:wrap;
+}
+.brand{
+  font-weight:900;
+  letter-spacing:1px;
+  font-size:20px;
+}
 .brand span{color:var(--gold)}
+
 .tools{display:flex;gap:7px}
-.tools button{border:1px solid #65738a;background:transparent;color:white;border-radius:7px;padding:7px 11px;font-weight:bold;cursor:pointer}
-.tools button.active{background:var(--gold);color:var(--navy);border-color:var(--gold)}
-main{background:white;margin:32px auto;padding:clamp(22px,5vw,48px);border-radius:14px;box-shadow:0 5px 24px #14233b0d}
-.back{display:inline-block;color:var(--gold);font-weight:bold;margin-bottom:18px}
-.category{display:inline-block;color:#986f27;font-weight:bold;margin-bottom:12px}
-h1{font-size:clamp(27px,4vw,39px);line-height:1.35;color:var(--navy);margin:0 0 12px}
-.meta{color:var(--muted);font-size:14px;border-bottom:1px solid #e8ebf0;padding-bottom:20px;margin-bottom:25px}
-.hero{width:100%;max-height:490px;object-fit:cover;border-radius:10px;margin:0 0 25px}
+.tools button{
+  border:1px solid #65738a;
+  background:transparent;
+  color:white;
+  border-radius:7px;
+  padding:7px 11px;
+  font-weight:bold;
+  cursor:pointer;
+}
+.tools button.active{
+  background:var(--gold);
+  color:var(--navy);
+  border-color:var(--gold);
+}
+
+nav{
+  background:#0b172b;
+  border-top:1px solid #263650;
+}
+.nav-links{
+  display:flex;
+  align-items:center;
+  gap:24px;
+  flex-wrap:wrap;
+  padding:10px 0;
+}
+.nav-links a{
+  color:#f2f4f7;
+  text-decoration:none;
+  font-size:14px;
+}
+.nav-links a:hover{color:var(--gold)}
+
+main{
+  background:white;
+  margin:32px auto;
+  padding:clamp(22px,5vw,48px);
+  border-radius:14px;
+  box-shadow:0 5px 24px #14233b0d;
+}
+.back{
+  display:inline-block;
+  color:var(--gold);
+  font-weight:bold;
+  margin-bottom:18px;
+  text-decoration:none;
+}
+.category{
+  display:inline-block;
+  color:#986f27;
+  font-weight:bold;
+  margin-bottom:12px;
+}
+h1{
+  font-size:clamp(27px,4vw,39px);
+  line-height:1.5;
+  color:var(--navy);
+  margin:0 0 12px;
+}
+.meta{
+  color:var(--muted);
+  font-size:14px;
+  border-bottom:1px solid #e8ebf0;
+  padding-bottom:20px;
+  margin-bottom:25px;
+}
+.hero{
+  width:100%;
+  max-height:490px;
+  object-fit:cover;
+  border-radius:10px;
+  margin:0 0 25px;
+}
 .article-text{font-size:17px}
-.article-text h2{color:var(--navy);font-size:23px;margin-top:28px}
+.article-text h2{
+  color:var(--navy);
+  font-size:23px;
+  margin-top:28px;
+}
 .article-text p{margin:0 0 18px}
-.author{margin-top:28px;padding-top:18px;border-top:1px solid #e8ebf0;font-size:14px;color:var(--muted);font-weight:bold}
-footer{text-align:center;color:var(--muted);padding:10px 0 30px;font-size:13px}
+.article-text strong{color:var(--navy)}
+
+.author{
+  margin-top:32px;
+  padding-top:18px;
+  border-top:1px solid #e8ebf0;
+  font-size:14px;
+  color:var(--muted);
+  font-weight:bold;
+  direction:ltr;
+  text-align:center;
+  letter-spacing:.5px;
+}
+footer{
+  text-align:center;
+  color:var(--muted);
+  padding:10px 0 30px;
+  font-size:13px;
+}
 [dir="ltr"] main{text-align:left}
 [hidden]{display:none!important}
+
 @media(max-width:600px){
-main{margin:18px auto;padding:22px 18px}
-.top{align-items:flex-start}
-.article-text{font-size:16px}
+  .top{align-items:flex-start}
+  .nav-links{gap:14px}
+  main{margin:18px auto;padding:22px 18px}
+  .article-text{font-size:16px}
+  .tools button{padding:7px 9px}
 }
 </style>
 </head>
+
 <body>
 
 <header>
-  <div class="brand">NIHAD <span>KAREEM</span></div>
-  <div class="languages">
-    <button class="active" onclick="changeLanguage('ku',this)">کوردی</button>
-    <button onclick="changeLanguage('en',this)">EN</button>
-    <button onclick="changeLanguage('ar',this)">العربية</button>
+  <div class="wrap top">
+    <div class="brand">NIHAD <span>KAREEM</span></div>
+    <div class="tools" aria-label="Language selector">
+      <button data-lang="ku" class="active">کوردی</button>
+      <button data-lang="en">EN</button>
+      <button data-lang="ar">العربية</button>
+    </div>
   </div>
 </header>
 
+<nav>
+  <div class="wrap nav-links">
+    <a href="../index.html" data-nav="home">سەرەکی</a>
+    <a href="../index.html#articles" data-nav="articles">وتارەکان</a>
+    <a href="../index.html#analysis" data-nav="analysis">شیکردنەوەی سیاسی</a>
+  </div>
+</nav>
+
 <main class="wrap">
-<a class="back" href="../index.html#articles">← گەڕانەوە بۆ وتارەکان</a>
-<article class="article">
+
+<a class="back" href="../index.html#articles" id="back-link">← گەڕانەوە بۆ وتارەکان</a>
+
+<span class="category" id="category">ڕاڤەکاری سیاسی</span>
+
+<h1 id="article-title">کوردستان لە نێوان هاوپەیمانیی سیاسی و دابەشبوونی دەسەڵاتدا</h1>
+
+<div class="meta" id="article-meta">
+نووسەر: نیهاد ئاراس کەریم | ٥ی تشرینی دووەمی ٢٠٢٦
+</div>
+
+<img class="hero" src="../assets/IMG_4629.jpeg" alt="هەرێمی کوردستان">
+
+<article class="article-text" id="article-body">
 
 <section id="ku">
-  <span class="category">ڕاڤەکاری سیاسی</span>
-  <h1>کوردستان لە نێوان هاوپەیمانیی سیاسی و دابەشبوونی دەسەڵاتدا</h1>
-  <div class="meta">نووسەر: نیهاد ئاراس کەریم | ٥ی تشرینی دووەمی ٢٠٢٦</div>
-  <img class="hero" src="../assets/IMG_4629.jpeg" alt="هەرێمی کوردستان">
-  <div class="article-text">
-    <p>هەرێمی کوردستان لە قۆناغێکی هەستیار و پڕ لە ئاڵنگاریی سیاسی تێدەپەڕێت. ئەوەی ئەمڕۆ زیاتر لە هەموو شتێک نیگەرانی دروست دەکات، تەنها ناکۆکیی نێوان پارتی دیموکراتی کوردستان و یەکێتیی نیشتمانیی کوردستان نییە؛ بەڵکو ئەوەیە کە ئەم ناکۆکییانە چۆن کاریگەری لەسەر دامەزراوەکانی حکومەت و ژیانی هاوڵاتیان دادەنێن.</p>
+<p>هەرێمی کوردستان لە قۆناغێکی هەستیار و پڕ لە ئاڵنگاریی سیاسی تێدەپەڕێت. ئەوەی ئەمڕۆ زیاتر لە هەموو شتێک نیگەرانی دروست دەکات، تەنها ناکۆکیی نێوان پارتی دیموکراتی کوردستان و یەکێتیی نیشتمانیی کوردستان نییە؛ بەڵکو ئەوەیە کە ئەم ناکۆکییانە چۆن کاریگەری لەسەر دامەزراوەکانی حکومەت و ژیانی هاوڵاتیان دادەنێن.</p>
 
-    <h2>کاتێک هاوپەیمانی لە مانا دوور دەکەوێتەوە</h2>
-    <p>هاوپەیمانیی سیاسی کاتێک مانای ڕاستەقینەی خۆی دەدۆزێتەوە کە لەسەر بنەمای بەرپرسیاریی هاوبەش، بەرنامەی ڕوون و پابەندبوون بە بەرژەوەندیی گشتی دامەزرابێت. ئەگەر هاوپەیمانی تەنها بۆ دابەشکردنی پۆست و دەسەڵات بێت، ناتوانێت متمانەی هاوڵاتیان بە دامەزراوەکان بگەڕێنێتەوە.</p>
+<h2>کاتێک هاوپەیمانی لە مانا دوور دەکەوێتەوە</h2>
+<p>هاوپەیمانیی سیاسی کاتێک مانای ڕاستەقینەی خۆی دەدۆزێتەوە کە لەسەر بنەمای بەرپرسیاریی هاوبەش، بەرنامەی ڕوون و پابەندبوون بە بەرژەوەندیی گشتی دامەزرابێت. ئەگەر هاوپەیمانی تەنها بۆ دابەشکردنی پۆست و دەسەڵات بێت، ناتوانێت متمانەی هاوڵاتیان بە دامەزراوەکان بگەڕێنێتەوە.</p>
 
-    <h2>هاوڵاتی لە ناوەندی ملمڵانێی سیاسی</h2>
-    <p>لە ناو هەموو ئەم ملمڵانێیەدا، ئەوەی نابێت لەبیر بکرێت مافی هاوڵاتییە. هاوڵاتی داوای مووچەی بەکات، خزمەتگوزاریی باش، کار، ئاسایش و حکومەتێکی بەرپرسیار دەکات؛ نەک تەنها کۆبوونەوە و بەڵێنی سیاسی.</p>
+<h2>هاوڵاتی لە ناوەندی ملمڵانێی سیاسی</h2>
+<p>لە ناو هەموو ئەم ملمڵانێیەدا، ئەوەی نابێت لەبیر بکرێت مافی هاوڵاتییە. هاوڵاتی داوای مووچەی بەکات، خزمەتگوزاریی باش، کار، ئاسایش و حکومەتێکی بەرپرسیار دەکات؛ نەک تەنها کۆبوونەوە و بەڵێنی سیاسی.</p>
 
-    <h2>چارەسەر لە کوێدایە؟</h2>
-    <p>چارەسەری قەیرانی سیاسی بە تەنها بە گۆڕینی پۆستەکان یان ڕێککەوتنی کاتی نایەتەدی. پێویستە دامەزراوە حکومییەکان لە دەسەڵاتی حیزبی جیا بکرێنەوە، بڕیارەکان لەسەر بنەمای یاسا و بەرژەوەندیی گشتی بن و هەموو لایەنەکان بەرپرسیاریی کارەکانیان بگرنە ئەستۆ.</p>
+<h2>چارەسەر لە کوێدایە؟</h2>
+<p>چارەسەری قەیرانی سیاسی بە تەنها بە گۆڕینی پۆستەکان یان ڕێککەوتنی کاتی نایەتەدی. پێویستە دامەزراوە حکومییەکان لە دەسەڵاتی حیزبی جیا بکرێنەوە، بڕیارەکان لەسەر بنەمای یاسا و بەرژەوەندیی گشتی بن و هەموو لایەنەکان بەرپرسیاریی کارەکانیان بگرنە ئەستۆ.</p>
 
-    <h2>کۆتایی</h2>
-    <p>کوردستان پێویستی بە حکومەتێک هەیە کە تەنها ناوی حکومەتی هاوبەش لەسەر نەبێت، بەڵکو لە کرداردا نوێنەری هاوبەشیی نیشتمانی و بەرژەوەندیی هاوڵاتیان بێت.</p>
-    <p><strong>کوردستان بە هاوبەشیی دامەزراوەیی و یەکڕیزیی نیشتمانی پێش دەکەوێت، نەک بە فراوانکردنی سنووری ملمڵانێی حیزبی.</strong></p>
-  </div>
+<h2>کۆتایی</h2>
+<p>کوردستان پێویستی بە حکومەتێک هەیە کە تەنها ناوی حکومەتی هاوبەش لەسەر نەبێت، بەڵکو لە کرداردا نوێنەری هاوبەشیی نیشتمانی و بەرژەوەندیی هاوڵاتیان بێت.</p>
+
+<p><strong>کوردستان بە هاوبەشیی دامەزراوەیی و یەکڕیزیی نیشتمانی پێش دەکەوێت، نەک بە فراوانکردنی سنووری ملمڵانێی حیزبی.</strong></p>
 </section>
 
 <section id="en" hidden>
-  <span class="category">Political Analysis</span>
-  <h1>Kurdistan Between Political Partnership and the Division of Power</h1>
-  <div class="meta">By Nihad Aras Kareem | 5 November 2026</div>
-  <img class="hero" src="../assets/IMG_4629.jpeg" alt="Kurdistan">
-  <div class="article-text">
-    <p>The Kurdistan Region is passing through a sensitive period marked by political challenges. The concern today is not simply the disagreement between the Kurdistan Democratic Party and the Patriotic Union of Kurdistan, but how these disagreements affect government institutions and the daily lives of citizens.</p>
-    <h2>When political partnership loses its meaning</h2>
-    <p>A political partnership becomes meaningful when it is built on shared responsibility, a clear programme and commitment to the public interest. If partnership is reduced to dividing positions and power, it cannot restore public confidence in institutions.</p>
-    <h2>Citizens at the centre of political disputes</h2>
-    <p>Citizens need timely salaries, reliable public services, employment, security and accountable government. They need practical results, not simply political meetings and promises.</p>
-    <h2>Where does the solution lie?</h2>
-    <p>Resolving the political crisis requires more than temporary agreements or changes in positions. Government institutions must serve the public rather than partisan interests. Decisions must be based on law, transparency and the common good, and every political party must accept responsibility for its actions.</p>
-    <h2>Conclusion</h2>
-    <p>Kurdistan needs a government whose commitment to partnership is reflected in its actions, not merely in its name. Institutional cooperation and national unity are essential for the region's future.</p>
-    <p><strong>Kurdistan moves forward through institutional partnership and national unity, not through the expansion of partisan conflict.</strong></p>
-  </div>
+<p>The Kurdistan Region is passing through a sensitive period marked by political challenges. The concern today is not simply the disagreement between the Kurdistan Democratic Party and the Patriotic Union of Kurdistan, but how these disagreements affect government institutions and the daily lives of citizens.</p>
+
+<h2>When political partnership loses its meaning</h2>
+<p>A political partnership becomes meaningful when it is built on shared responsibility, a clear programme and commitment to the public interest. If partnership is reduced to dividing positions and power, it cannot restore public confidence in institutions.</p>
+
+<h2>Citizens at the centre of political disputes</h2>
+<p>Citizens need timely salaries, reliable public services, employment, security and accountable government. They need practical results, not simply political meetings and promises.</p>
+
+<h2>Where does the solution lie?</h2>
+<p>Resolving the political crisis requires more than temporary agreements or changes in positions. Government institutions must serve the public rather than partisan interests. Decisions must be based on law, transparency and the common good, and every political party must accept responsibility for its actions.</p>
+
+<h2>Conclusion</h2>
+<p>Kurdistan needs a government whose commitment to partnership is reflected in its actions, not merely in its name. Institutional cooperation and national unity are essential for the region's future.</p>
+
+<p><strong>Kurdistan moves forward through institutional partnership and national unity, not through the expansion of partisan conflict.</strong></p>
 </section>
 
 <section id="ar" hidden>
-  <span class="category">تحليل سياسي</span>
-  <h1>كردستان بين الشراكة السياسية وانقسام السلطة</h1>
-  <div class="meta">بقلم: نهاد آراس كريم | ٥ تشرين الثاني ٢٠٢٦</div>
-  <img class="hero" src="../assets/IMG_4629.jpeg" alt="كردستان">
-  <div class="article-text">
-    <p>يمر إقليم كردستان بمرحلة حساسة مليئة بالتحديات السياسية. ولا تقتصر المخاوف اليوم على الخلاف بين الحزب الديمقراطي الكردستاني والاتحاد الوطني الكردستاني، بل تتعلق أيضاً بتأثير هذه الخلافات على مؤسسات الحكومة والحياة اليومية للمواطنين.</p>
-    <h2>عندما تفقد الشراكة السياسية معناها</h2>
-    <p>تكتسب الشراكة السياسية معناها الحقيقي عندما تقوم على المسؤولية المشتركة والبرنامج الواضح والالتزام بالمصلحة العامة. أما إذا اختُزلت في توزيع المناصب والنفوذ، فلن تتمكن من استعادة ثقة المواطنين بالمؤسسات.</p>
-    <h2>المواطن في قلب الخلافات السياسية</h2>
-    <p>يحتاج المواطن إلى راتب في موعده، وخدمات جيدة، وفرص عمل، وأمن، وحكومة تتحمل مسؤولياتها. وهو بحاجة إلى نتائج ملموسة، لا إلى اجتماعات ووعود سياسية فقط.</p>
-    <h2>أين يكمن الحل؟</h2>
-    <p>إن معالجة الأزمة السياسية تتطلب أكثر من اتفاقات مؤقتة أو تغيير المناصب. يجب أن تعمل المؤسسات الحكومية لخدمة المواطنين بعيداً عن المصالح الحزبية، وأن تستند القرارات إلى القانون والشفافية والمصلحة العامة.</p>
-    <h2>الخاتمة</h2>
-    <p>يحتاج كردستان إلى حكومة تجسد الشراكة في أفعالها، لا في اسمها فقط. فالتعاون المؤسسي والوحدة الوطنية عنصران أساسيان لمستقبل الإقليم.</p>
-    <p><strong>يتقدم كردستان بالشراكة المؤسسية والوحدة الوطنية، لا بتوسيع دائرة الصراع الحزبي.</strong></p>
-  </div>
+<p>يمر إقليم كردستان بمرحلة حساسة مليئة بالتحديات السياسية. ولا تقتصر المخاوف اليوم على الخلاف بين الحزب الديمقراطي الكردستاني والاتحاد الوطني الكردستاني، بل تتعلق أيضاً بتأثير هذه الخلافات على مؤسسات الحكومة والحياة اليومية للمواطنين.</p>
+
+<h2>عندما تفقد الشراكة السياسية معناها</h2>
+<p>تكتسب الشراكة السياسية معناها الحقيقي عندما تقوم على المسؤولية المشتركة والبرنامج الواضح والالتزام بالمصلحة العامة. أما إذا اختُزلت في توزيع المناصب والنفوذ، فلن تتمكن من استعادة ثقة المواطنين بالمؤسسات.</p>
+
+<h2>المواطن في قلب الخلافات السياسية</h2>
+<p>يحتاج المواطن إلى راتب في موعده، وخدمات جيدة، وفرص عمل، وأمن، وحكومة تتحمل مسؤولياتها. وهو بحاجة إلى نتائج ملموسة، لا إلى اجتماعات ووعود سياسية فقط.</p>
+
+<h2>أين يكمن الحل؟</h2>
+<p>إن معالجة الأزمة السياسية تتطلب أكثر من اتفاقات مؤقتة أو تغيير المناصب. يجب أن تعمل المؤسسات الحكومية لخدمة المواطنين بعيداً عن المصالح الحزبية، وأن تستند القرارات إلى القانون والشفافية والمصلحة العامة.</p>
+
+<h2>الخاتمة</h2>
+<p>يحتاج كردستان إلى حكومة تجسد الشراكة في أفعالها، لا في اسمها فقط. فالتعاون المؤسسي والوحدة الوطنية عنصران أساسيان لمستقبل الإقليم.</p>
+
+<p><strong>يتقدم كردستان بالشراكة المؤسسية والوحدة الوطنية، لا بتوسيع دائرة الصراع الحزبي.</strong></p>
 </section>
 
-<div class="author">NIHAD KAREEM — Journalism · Analysis · News</div>
 </article>
+
+<div class="author">NIHAD KAREEM — JOURNALISM · ANALYSIS · NEWS</div>
+
 </main>
 
-<footer>© 2026 NIHAD KAREEM. All rights reserved.</footer>
+<footer class="wrap">© <span id="year"></span> NIHAD KAREEM. All rights reserved.</footer>
 
 <script>
-function changeLanguage(lang, button) {
-  document.getElementById('ku').hidden = lang !== 'ku';
-  document.getElementById('en').hidden = lang !== 'en';
-  document.getElementById('ar').hidden = lang !== 'ar';
-
-  document.documentElement.lang = lang;
-  document.documentElement.dir = lang === 'en' ? 'ltr' : 'rtl';
-
-  document.querySelectorAll('.languages button').forEach(function(btn) {
-    btn.classList.remove('active');
-  });
-  button.classList.add('active');
+const labels={
+ku:{
+category:"ڕاڤەکاری سیاسی",
+author:"نووسەر: نیهاد ئاراس کەریم",
+date:"٥ی تشرینی دووەمی ٢٠٢٦",
+back:"گەڕانەوە بۆ وتارەکان",
+home:"سەرەکی",
+articles:"وتارەکان",
+analysis:"شیکردنەوەی سیاسی"
+},
+en:{
+category:"POLITICAL ANALYSIS",
+author:"By Nihad Aras Kareem",
+date:"5 November 2026",
+back:"Back to articles",
+home:"Home",
+articles:"Articles",
+analysis:"Political Analysis"
+},
+ar:{
+category:"تحليل سياسي",
+author:"بقلم: نهاد آراس كريم",
+date:"٥ تشرين الثاني ٢٠٢٦",
+back:"العودة إلى المقالات",
+home:"الرئيسية",
+articles:"المقالات",
+analysis:"تحليل سياسي"
 }
+};
+
+function setLang(lang){
+ if(!labels[lang])lang="ku";
+
+ document.documentElement.lang=lang;
+ document.documentElement.dir=lang==="en"?"ltr":"rtl";
+
+ document.querySelectorAll("#article-body section").forEach(section=>{
+   section.hidden=section.id!==lang;
+ });
+
+ const t=labels[lang];
+ document.getElementById("category").textContent=t.category;
+ document.getElementById("article-meta").textContent=t.author+" | "+t.date;
+ document.getElementById("back-link").textContent="← "+t.back;
+
+ document.querySelector('[data-nav="home"]').textContent=t.home;
+ document.querySelector('[data-nav="articles"]').textContent=t.articles;
+ document.querySelector('[data-nav="analysis"]').textContent=t.analysis;
+
+ document.querySelectorAll("[data-lang]").forEach(button=>{
+   button.classList.toggle("active",button.dataset.lang===lang);
+ });
+
+ try{localStorage.setItem("nk-lang",lang)}catch(e){}
+}
+
+document.querySelectorAll("[data-lang]").forEach(button=>{
+ button.addEventListener("click",()=>setLang(button.dataset.lang));
+});
+
+let initial=new URLSearchParams(location.search).get("lang");
+if(!["ku","en","ar"].includes(initial)){
+ try{initial=localStorage.getItem("nk-lang")}catch(e){}
+}
+setLang(initial||"ku");
+
+document.getElementById("year").textContent=new Date().getFullYear();
 </script>
 
 </body>
 </html>
+```
+
+**تێبینی:** ئەم کۆدە مێنیووی سەرەوە و شێوازی پەڕەی کۆنەکەت دروست دەکات. ناونیشان، وێنە و ناوەڕۆکی سێ زمانەکەش دەپارێزێت.
+
+کاتێک کۆدەکەت دانا، تەنها پێم بڵێ **«دانام»**؛ پاشان پێت دەڵێم چۆن پاشەکەوتی بکەیت. ❤️
