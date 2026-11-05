@@ -282,3 +282,15 @@ document.getElementById("year").textContent=new Date().getFullYear();
 </script>
 </body>
 </html>
+@media (max-width: 600px) {
+  .post-card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .post-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+}
