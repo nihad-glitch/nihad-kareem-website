@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ku" dir="rtl">
 <head>
@@ -18,7 +17,9 @@
   --muted:#667085;
   --paper:#f4f6f9;
 }
+
 *{box-sizing:border-box}
+
 body{
   margin:0;
   background:var(--paper);
@@ -26,15 +27,18 @@ body{
   font-family:Arial,"Noto Sans Arabic",sans-serif;
   line-height:1.95;
 }
+
 header{
   background:var(--navy);
   color:#fff;
   border-bottom:3px solid var(--gold);
 }
+
 .wrap{
   width:min(900px,92%);
   margin:auto;
 }
+
 .top{
   display:flex;
   align-items:center;
@@ -43,16 +47,22 @@ header{
   flex-wrap:wrap;
   padding:17px 0;
 }
+
 .brand{
   font-size:20px;
   font-weight:900;
   letter-spacing:1px;
 }
-.brand span,footer span{color:var(--gold)}
+
+.brand span,footer span{
+  color:var(--gold);
+}
+
 .languages{
   display:flex;
   gap:7px;
 }
+
 .languages button{
   background:transparent;
   color:white;
@@ -62,19 +72,21 @@ header{
   cursor:pointer;
   font-weight:bold;
 }
+
 .languages button.active{
   background:var(--gold);
   color:var(--navy);
   border-color:var(--gold);
 }
+
 .back{
   display:inline-block;
   color:var(--gold);
   margin:16px 0;
   text-decoration:none;
   font-weight:bold;
-  direction:rtl;
 }
+
 article{
   background:#fff;
   border-radius:14px;
@@ -82,22 +94,26 @@ article{
   margin:12px auto 35px;
   box-shadow:0 5px 25px #14233b0b;
 }
+
 .category{
   color:#a17b35;
   font-size:13px;
   font-weight:bold;
 }
+
 h1{
   color:var(--navy);
   font-size:clamp(27px,5vw,39px);
   line-height:1.5;
   margin:12px 0;
 }
+
 .meta{
   color:var(--muted);
   font-size:13px;
   margin-bottom:20px;
 }
+
 .hero-image{
   width:100%;
   aspect-ratio:16/9;
@@ -106,6 +122,7 @@ h1{
   display:block;
   margin:20px 0;
 }
+
 h2{
   color:var(--navy);
   font-size:23px;
@@ -113,42 +130,71 @@ h2{
   border-right:3px solid var(--gold);
   padding-right:12px;
 }
+
 p{
   font-size:16px;
   margin:14px 0;
 }
+
 .original{
   border-top:1px solid #e5e7eb;
   margin-top:28px;
   padding-top:20px;
   overflow-wrap:anywhere;
 }
-.original a{color:#98712e}
+
+.original a{
+  color:#98712e;
+}
+
 footer{
   text-align:center;
   padding:24px 12px;
   font-size:13px;
   color:#667085;
 }
-[dir="ltr"] article{text-align:left}
+
+/* Language direction */
+[dir="ltr"] article{
+  text-align:left;
+}
+
 [dir="ltr"] h2{
   border-right:0;
   border-left:3px solid var(--gold);
   padding-right:0;
   padding-left:12px;
 }
-[dir="rtl"] article{text-align:right}
 
-/* Language display - same method as Khor Mor page */
-[data-content][hidden]{
+[dir="rtl"] article{
+  text-align:right;
+}
+
+/* FIXED LANGUAGE CONTENT DISPLAY */
+section[data-content]{
   display:none !important;
 }
 
+section[data-content].is-visible{
+  display:block !important;
+}
+
 @media(max-width:600px){
-  .top{align-items:flex-start}
-  .languages{flex-wrap:wrap}
-  article{padding:19px}
-  p{font-size:15px}
+  .top{
+    align-items:flex-start;
+  }
+
+  .languages{
+    flex-wrap:wrap;
+  }
+
+  article{
+    padding:19px;
+  }
+
+  p{
+    font-size:15px;
+  }
 }
 </style>
 </head>
@@ -157,34 +203,61 @@ footer{
 
 <header>
   <div class="wrap top">
-    <div class="brand">NIHAD <span>KAREEM</span></div>
+
+    <div class="brand">
+      NIHAD <span>KAREEM</span>
+    </div>
 
     <div class="languages" aria-label="Language selector">
-      <button type="button" class="active" data-lang="ku">کوردی</button>
-      <button type="button" data-lang="en">EN</button>
-      <button type="button" data-lang="ar">العربية</button>
+
+      <button type="button" class="active" data-lang="ku">
+        کوردی
+      </button>
+
+      <button type="button" data-lang="en">
+        EN
+      </button>
+
+      <button type="button" data-lang="ar">
+        العربية
+      </button>
+
     </div>
   </div>
 </header>
 
 <main class="wrap">
 
-<a class="back" href="../index.html">← گەڕانەوە بۆ سەرەکی</a>
+<a class="back" href="../index.html">
+  ← گەڕانەوە بۆ سەرەکی
+</a>
 
 <article>
 
-<div class="category" data-i18n="category">شیکردنەوەی سیاسی</div>
+<div class="category" data-i18n="category">
+  شیکردنەوەی سیاسی
+</div>
 
-<h1 data-i18n="title">شیکردنەوەی دۆخی ئێستای کورد لە سووریا و عێراق</h1>
+<h1 data-i18n="title">
+  شیکردنەوەی دۆخی ئێستای کورد لە سووریا و عێراق
+</h1>
 
-<div class="meta" data-i18n="meta">نووسەر: نیهاد ئاراس کەریم · ٢١ی کانوونی دووەمی ٢٠٢٦</div>
+<div class="meta" data-i18n="meta">
+  نووسەر: نیهاد ئاراس کەریم · ٢١ی کانوونی دووەمی ٢٠٢٦
+</div>
 
-<img class="hero-image" src="../assets/IMG_4632.png" alt="An Analysis of the Current Situation of Kurds in Syria and Iraq">
+<img
+  class="hero-image"
+  src="../assets/IMG_4632.png"
+  alt="An Analysis of the Current Situation of Kurds in Syria and Iraq"
+>
 
 <!-- KURDISH -->
+
 <section id="content-ku" data-content="ku" lang="ku" dir="rtl">
 
 <h2>کوردیی سۆرانی</h2>
+
 <h2>شیکردنەوەی دۆخی ئێستای کورد لە سووریا و عێراق</h2>
 
 <p>دۆخی ئێستای کورد لە سووریا و عێراق تەنها ئەنجامی گۆڕانکارییە سیاسییە کاتییەکان نییە؛ بەڵکو نیشانەیەکی ڕوونی شکستی ئەو سیستەمانەیە کە لەسەر درۆ، زۆرەملێ و نکۆڵیکردن دامەزراون. وەک نەتەوەیەک، کورد بەهۆی لاوازیی ناوخۆیی نەکەوتووەتە ئەم دۆخە دژوارەوە، بەڵکو بەهۆی نەبوونی دادپەروەری و دروستگۆیی لە بیرکردنەوەی دەوڵەتە دراوسێکانەوەیە. ئەمەش کۆتایی ساڵانی زۆری گوشاری سیستەماتیک و نادادپەروەرییە کە ئێستا گەیشتووەتە ئاستێکی مەترسیدار.</p>
@@ -210,9 +283,11 @@ footer{
 </section>
 
 <!-- ENGLISH -->
-<section id="content-en" data-content="en" lang="en" dir="ltr" hidden>
+
+<section id="content-en" data-content="en" lang="en" dir="ltr">
 
 <h2>English</h2>
+
 <h2>An Analysis of the Current Situation of Kurds in Syria and Iraq</h2>
 
 <p>The current situation of Kurds in Syria and Iraq is not merely the result of temporary political shifts; it is a clear indication of the failure of political systems built on falsehood, coercion, and denial. As a nation, Kurds have fallen into this dire state not because of internal weakness but due to a lack of justice and integrity in the mindset of neighbouring states. This is the culmination of long years of systemic pressure and injustice that has now reached a critical peak.</p>
@@ -238,9 +313,11 @@ footer{
 </section>
 
 <!-- ARABIC -->
-<section id="content-ar" data-content="ar" lang="ar" dir="rtl" hidden>
+
+<section id="content-ar" data-content="ar" lang="ar" dir="rtl">
 
 <h2>العربية</h2>
+
 <h2>تحليل الوضع الراهن للكرد في سوريا والعراق</h2>
 
 <p>إن الوضع الراهن للكرد في سوريا والعراق ليس مجرد نتيجة لتحولات سياسية مؤقتة، بل هو مؤشر واضح على فشل الأنظمة السياسية القائمة على الزيف والإكراه والإنكار. وبصفتهم أمة، لم يصل الكرد إلى هذا الوضع الصعب بسبب ضعف داخلي، بل نتيجة غياب العدالة والنزاهة في ذهنية الدول المجاورة. وهذا هو حصيلة سنوات طويلة من الضغوط الممنهجة والظلم الذي بلغ الآن ذروة حرجة.</p>
@@ -266,24 +343,48 @@ footer{
 </section>
 
 <div class="original">
-  <strong data-i18n="originalLabel">سەرچاوەی سەرەکی:</strong>
-  <a href="https://regayazadi-lrj.co.uk/en/an-analysis-of-the-current-situation-of-kurds-in-syria-and-iraq/" target="_blank" rel="noopener noreferrer" data-i18n="originalLink">regayazadi-lrj.co.uk — وتاری سەرەکی</a>
+
+<strong data-i18n="originalLabel">
+سەرچاوەی سەرەکی:
+</strong>
+
+<a
+href="https://regayazadi-lrj.co.uk/en/an-analysis-of-the-current-situation-of-kurds-in-syria-and-iraq/"
+target="_blank"
+rel="noopener noreferrer"
+data-i18n="originalLink"
+>
+regayazadi-lrj.co.uk — وتاری سەرەکی
+</a>
+
 </div>
 
-<p class="meta" data-i18n="author">ئامادەکردنی: نیهاد ئاراس کەریم</p>
+<p class="meta" data-i18n="author">
+ئامادەکردنی: نیهاد ئاراس کەریم
+</p>
 
 </article>
 </main>
 
 <footer>
-  <div class="brand">NIHAD <span>KAREEM</span></div>
-  <div>© <span id="year"></span> Nihad Aras Kareem</div>
+
+<div class="brand">
+NIHAD <span>KAREEM</span>
+</div>
+
+<div>
+© <span id="year"></span> Nihad Aras Kareem
+</div>
+
 </footer>
 
 <script>
 (function(){
 
+"use strict";
+
 const translations={
+
   ku:{
     category:"شیکردنەوەی سیاسی",
     title:"شیکردنەوەی دۆخی ئێستای کورد لە سووریا و عێراق",
@@ -292,6 +393,7 @@ const translations={
     originalLink:"regayazadi-lrj.co.uk — وتاری سەرەکی",
     author:"ئامادەکردنی: نیهاد ئاراس کەریم"
   },
+
   en:{
     category:"POLITICAL ANALYSIS",
     title:"An Analysis of the Current Situation of Kurds in Syria and Iraq",
@@ -300,6 +402,7 @@ const translations={
     originalLink:"regayazadi-lrj.co.uk — Original article",
     author:"Prepared by: Nihad Aras Kareem"
   },
+
   ar:{
     category:"تحليل سياسي",
     title:"تحليل الوضع الراهن للكرد في سوريا والعراق",
@@ -308,6 +411,7 @@ const translations={
     originalLink:"regayazadi-lrj.co.uk — المقال الأصلي",
     author:"إعداد: نهاد آراس كريم"
   }
+
 };
 
 function setLanguage(lang){
@@ -317,54 +421,97 @@ function setLanguage(lang){
   }
 
   document.documentElement.lang=lang;
-  document.documentElement.dir=lang==="en"?"ltr":"rtl";
 
-  document.querySelectorAll("[data-i18n]").forEach(el=>{
-    const value=translations[lang][el.dataset.i18n];
-    if(value!==undefined){
-      el.textContent=value;
+  document.documentElement.dir=
+    lang==="en" ? "ltr" : "rtl";
+
+  /* Update translated headings and labels */
+
+  document.querySelectorAll("[data-i18n]").forEach(function(el){
+
+    const key=el.dataset.i18n;
+
+    if(Object.prototype.hasOwnProperty.call(translations[lang],key)){
+      el.textContent=translations[lang][key];
     }
+
   });
 
-  /* Show only the selected language */
-  document.querySelectorAll("[data-content]").forEach(el=>{
-    el.hidden=el.dataset.content!==lang;
+  /* Display only the selected article language */
+
+  document.querySelectorAll("section[data-content]").forEach(function(section){
+
+    const selected=section.dataset.content===lang;
+
+    section.classList.toggle("is-visible",selected);
+
+    section.setAttribute(
+      "aria-hidden",
+      selected ? "false" : "true"
+    );
+
   });
 
-  /* Update active language button */
-  document.querySelectorAll("[data-lang]").forEach(button=>{
-    button.classList.toggle("active",button.dataset.lang===lang);
+  /* Update language buttons */
+
+  document.querySelectorAll("[data-lang]").forEach(function(button){
+
+    const selected=button.dataset.lang===lang;
+
+    button.classList.toggle("active",selected);
+
+    button.setAttribute(
+      "aria-pressed",
+      selected ? "true" : "false"
+    );
+
   });
 
   try{
     localStorage.setItem("nk-lang",lang);
-  }catch(e){}
+  }catch(error){}
+
 }
 
-/* Language buttons */
-document.querySelectorAll("[data-lang]").forEach(button=>{
-  button.addEventListener("click",()=>{
+/* Language button actions */
+
+document.querySelectorAll("[data-lang]").forEach(function(button){
+
+  button.addEventListener("click",function(){
+
     setLanguage(button.dataset.lang);
+
   });
+
 });
 
-/* Initial language */
-let lang="ku";
+/* Initial language selection */
 
-try{
-  lang=localStorage.getItem("nk-lang")||"ku";
-}catch(e){}
+const params=new URLSearchParams(window.location.search);
 
-const queryLang=new URLSearchParams(window.location.search).get("lang");
+let initialLang=params.get("lang");
 
-if(queryLang && translations[queryLang]){
-  lang=queryLang;
+if(!translations[initialLang]){
+
+  try{
+    initialLang=localStorage.getItem("nk-lang");
+  }catch(error){}
+
 }
 
-setLanguage(lang);
+if(!translations[initialLang]){
+  initialLang="ku";
+}
+
+setLanguage(initialLang);
 
 /* Current year */
-document.getElementById("year").textContent=new Date().getFullYear();
+
+const yearElement=document.getElementById("year");
+
+if(yearElement){
+  yearElement.textContent=new Date().getFullYear();
+}
 
 })();
 </script>
