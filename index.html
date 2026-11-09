@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="ku" dir="rtl">
 <head>
@@ -75,10 +74,19 @@ nav{gap:14px}
 </style>
 </head>
 <body>
-<header><div class="wrap">
+
+<header>
+<div class="wrap">
  <div class="top">
-  <div><div class="brand">NIHAD <span>KAREEM</span></div><div class="tag">JOURNALISM · ANALYSIS · NEWS</div></div>
-  <div class="tools" aria-label="Language selector"><button class="active" data-lang="ku">کوردی</button><button data-lang="en">EN</button><button data-lang="ar">العربية</button></div>
+  <div>
+   <div class="brand">NIHAD <span>KAREEM</span></div>
+   <div class="tag">JOURNALISM · ANALYSIS · NEWS</div>
+  </div>
+  <div class="tools" aria-label="Language selector">
+   <button class="active" data-lang="ku">کوردی</button>
+   <button data-lang="en">EN</button>
+   <button data-lang="ar">العربية</button>
+  </div>
  </div>
  <nav>
   <button data-scroll="home" data-i18n="navHome">سەرەکی</button>
@@ -87,10 +95,13 @@ nav{gap:14px}
   <button data-scroll="about" data-i18n="navAbout">دەربارە</button>
   <button data-scroll="contact" data-i18n="navContact">پەیوەندی</button>
  </nav>
-</div></header>
+</div>
+</header>
 
 <main>
-<section class="hero" id="home"><div class="wrap hero-grid">
+
+<section class="hero" id="home">
+<div class="wrap hero-grid">
  <div>
   <div class="eyebrow" data-i18n="eyebrow">ماڵپەڕی فەرمی</div>
   <h1 data-i18n="name">نیهاد ئاراس کەریم</h1>
@@ -98,12 +109,30 @@ nav{gap:14px}
   <p class="intro" data-i18n="intro">هەواڵ، ڕاپۆرت و شیکردنەوەی سیاسی لە بەریتانیا و جیهان؛ بە دیدێکی سەربەخۆ و گرنگیدان بە زانیاریی پشتڕاستکراوە.</p>
  </div>
  <img class="portrait" src="assets/nihad-aras-kareem.jpeg" alt="Nihad Aras Kareem">
-</div></section>
+</div>
+</section>
 
 <section class="section wrap" id="articles">
- <div class="section-head"><h2 data-i18n="latestTitle">نوێترین وتارەکان</h2><span class="kicker">ARTICLES</span></div>
+ <div class="section-head">
+  <h2 data-i18n="latestTitle">نوێترین وتارەکان</h2>
+  <span class="kicker">ARTICLES</span>
+ </div>
+
  <div class="post-list">
 
+ <!-- NEW ARTICLE: KHOR MOR -->
+ <a class="post-card" href="articles/khor-mor-drone-attack.html" data-article-link data-path="articles/khor-mor-drone-attack.html">
+  <img src="assets/A9A5DC2C-5082-49FE-8A5A-5DB1B19EA0FA.png" alt="وێنەیەکی ڕوونکردنەوەیی بۆ کێڵگەی گازی خور مور" loading="lazy">
+  <div class="post-card-body">
+   <span class="eyebrow" data-i18n="a6Cat">هەواڵ و شیکردنەوەی سیاسی</span>
+   <h3 data-i18n="a6Title">خور مور؛ هێرشێک لەسەر وزە و کارەبای کوردستان</h3>
+   <p data-i18n="a6Excerpt">ڕاپۆرتێک لەسەر هێرشەکە و کاریگەرییەکانی لەسەر دابینکردنی گاز و کارەبا لە هەرێمی کوردستان.</p>
+   <small data-i18n="a6By">نووسەر: نیهاد ئاراس کەریم</small>
+   <span class="read-more" data-i18n="readMore">خوێندنەوەی وتار ←</span>
+  </div>
+ </a>
+
+ <!-- EXISTING ARTICLE 1 -->
  <a class="post-card" href="articles/shabana-mahmood-immigration.html" data-article-link data-path="articles/shabana-mahmood-immigration.html">
   <img src="assets/photo-output.jpeg" alt="Shabana Mahmood — Immigration &amp; Asylum Policy" loading="lazy">
   <div class="post-card-body">
@@ -115,6 +144,7 @@ nav{gap:14px}
   </div>
  </a>
 
+ <!-- EXISTING ARTICLE 2 -->
  <a class="post-card" href="articles/kurds-syria-iraq.html" data-article-link data-path="articles/kurds-syria-iraq.html">
   <img src="assets/IMG_4632.png" alt="کورد لە سووریا و عێراق" loading="lazy">
   <div class="post-card-body">
@@ -126,6 +156,7 @@ nav{gap:14px}
   </div>
  </a>
 
+ <!-- EXISTING ARTICLE 3 -->
  <a class="post-card" href="articles/new-post.html" data-article-link data-path="articles/new-post.html">
   <img src="assets/IMG_4613.jpeg" alt="ململانێی ڕۆژهەڵاتی ناوەڕاست" loading="lazy">
   <div class="post-card-body">
@@ -137,6 +168,7 @@ nav{gap:14px}
   </div>
  </a>
 
+ <!-- EXISTING ARTICLE 4 -->
  <a class="post-card" href="articles/kurdistan-unity.html" data-article-link data-path="articles/kurdistan-unity.html">
   <img src="assets/IMG_4629.jpeg" alt="کوردستان و ڕاڤەکاری سیاسی" loading="lazy">
   <div class="post-card-body">
@@ -148,6 +180,7 @@ nav{gap:14px}
   </div>
  </a>
 
+ <!-- EXISTING ARTICLE 5 -->
  <a class="post-card" href="articles/16-october-2017.html" data-article-link data-path="articles/16-october-2017.html">
   <img src="assets/DFD603AF-A7E4-45DD-AE1B-3AF31C17FAD9.png" alt="کەرکووک، ١٦ی ئۆکتۆبەری ٢٠١٧" loading="lazy">
   <div class="post-card-body">
@@ -163,7 +196,10 @@ nav{gap:14px}
 </section>
 
 <section class="section wrap" id="topics">
- <div class="section-head"><h2 data-i18n="topicsTitle">بەشەکانی ماڵپەڕ</h2><span class="kicker">EDITORIAL</span></div>
+ <div class="section-head">
+  <h2 data-i18n="topicsTitle">بەشەکانی ماڵپەڕ</h2>
+  <span class="kicker">EDITORIAL</span>
+ </div>
  <div class="cards">
   <a class="card" href="#articles">
    <div class="icon">📰</div>
@@ -184,7 +220,9 @@ nav{gap:14px}
 </section>
 
 <section class="section wrap" id="about">
- <div class="section-head"><h2 data-i18n="aboutTitle">دەربارەی من</h2></div>
+ <div class="section-head">
+  <h2 data-i18n="aboutTitle">دەربارەی من</h2>
+ </div>
  <div class="about">
   <strong data-i18n="aboutName">نیهاد ئاراس کەریم</strong>
   <p data-i18n="aboutText">نووسەر و ڕاڤەکاری سیاسی. ئەم ماڵپەڕە شوێنێکە بۆ پێشکەشکردنی هەواڵ، وتار و شیکردنەوە بە زمانی کوردی، ئینگلیزی و عەرەبی.</p>
@@ -192,7 +230,9 @@ nav{gap:14px}
 </section>
 
 <section class="section wrap" id="contact">
- <div class="section-head"><h2 data-i18n="contactTitle">پەیوەندی</h2></div>
+ <div class="section-head">
+  <h2 data-i18n="contactTitle">پەیوەندی</h2>
+ </div>
  <div class="card">
   <p data-i18n="contactText">بۆ پەیوەندی و هاوکاریی ڕۆژنامەوانی، زانیاریی پەیوەندی دواتر لێرە زیاد دەکرێت.</p>
   <a class="fb-btn" href="https://www.facebook.com/share/18j41AXFFe/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">
@@ -202,6 +242,7 @@ nav{gap:14px}
   <p class="notice" data-i18n="domainNote">دۆمەینی پێشنیارکراو: nihadkareem.com — پێویستە تۆمارکردن و بەردەستبوونی بپشکنرێت.</p>
  </div>
 </section>
+
 </main>
 
 <footer>
@@ -209,7 +250,7 @@ nav{gap:14px}
   <div class="brand">NIHAD <span class="gold">KAREEM</span></div>
   <small data-i18n="footer">ماڵپەڕی سەربەخۆی هەواڵ و ڕاڤەکاری سیاسی</small><br>
   <a class="fb-foot" href="https://www.facebook.com/share/18j41AXFFe/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-   <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.07C24 5.41 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.04V9.41c0-3.02 1.8-4.7 4.54-4.7 1.31 0 2.68.24 2.68.24v2.97h-1.5c-1.5 0-1.96.93-1.96 1.89v2.26h3.32l-.53 3.5h-2.8V24C19.62 23.1 24 18.1 24 12.07"/></svg>
+   <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.07C24 5.41 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.04V9.41c0-3.02 1.8-4.7 4.54-4.7 1.31 0 2.68.24 2.68 2.97h-1.5c-1.5 0-1.96.93-1.96 1.89v2.26h3.32l-.53 3.5h-2.8V24C19.62 23.1 24 18.1 24 12.07"/></svg>
    <span>Facebook</span>
   </a><br>
   <small>© <span id="year"></span> Nihad Aras Kareem</small>
@@ -218,28 +259,40 @@ nav{gap:14px}
 
 <script>
 const translations = {
+
 ku: {
 navHome:"سەرەکی",navArticles:"وتارەکان",latestTitle:"نوێترین وتارەکان",
+
+a6Cat:"هەواڵ و شیکردنەوەی سیاسی",
+a6Title:"خور مور؛ هێرشێک لەسەر وزە و کارەبای کوردستان",
+a6Excerpt:"ڕاپۆرتێک لەسەر هێرشەکە و کاریگەرییەکانی لەسەر دابینکردنی گاز و کارەبا لە هەرێمی کوردستان.",
+a6By:"نووسەر: نیهاد ئاراس کەریم",
+
 a1Cat:"ڕاڤەکاری سیاسی",
 a1Title:"بڕیارە نوێکانی شابانا مەحمود؛ قسە زۆرە، بەڵام جێبەجێکردن کەی؟",
 a1Excerpt:"ئایا ئەم بڕیارانە بەڕاستی چوونەتە بواری جێبەجێکردن، یان تەنها ڕاگەیاندن و قسەی میدیایی بوون؟",
 a1By:"نووسەر: نیهاد ئاراس کەریم",
+
 a2Cat:"شیکردنەوەی سیاسی",
 a2Title:"شیکردنەوەی دۆخی ئێستای کورد لە سووریا و عێراق",
 a2Excerpt:"خوێندنەوەیەک لە ناسنامەی کوردی لە سووریا، پەیوەندیی هەرێم و بەغدا، و کێشە ناوخۆییەکانی کوردستان.",
 a2By:"نووسەر: نیهاد ئاراس کەریم · ٢١ی کانوونی دووەمی ٢٠٢٦",
+
 a3Cat:"شیکردنەوەی سیاسی",
 a3Title:"ململانێی بەردەوامی ڕۆژهەڵاتی ناوەڕاست و کاریگەرییەکانی لەسەر عێراق و کوردستان",
 a3Excerpt:"شیکردنەوەی کاریگەریی ملمـلانێی ناوچەیی لەسەر عێراق و هەرێمی کوردستان.",
 a3By:"نووسەر: نیهاد ئاراس کەریم",
+
 a4Cat:"ڕاڤەکاری سیاسی",
 a4Title:"کوردستان لە نێوان هاوپەیمانیی سیاسی و دابەشبوونی دەسەڵاتدا",
 a4Excerpt:"ڕاڤەکارییەک لەسەر دۆخی سیاسیی هەرێمی کوردستان و هاوپەیمانیی نێوان لایەنەکان.",
 a4By:"نووسەر: نیهاد ئاراس کەریم",
+
 a5Cat:"مێژوو و ڕاڤەکاری سیاسی",
 a5Title:"١٦ی ئۆکتۆبەری ٢٠١٧؛ کەرکووک چۆن لەدەست چوو؟",
 a5Excerpt:"خوێندنەوەیەک لە ڕووداوەکانی ١٦ی ئۆکتۆبەری ٢٠١٧، دۆخی کەرکووک و کاریگەرییە سیاسی و مێژووییەکانی.",
 a5By:"نووسەر: نیهاد ئاراس کەریم",
+
 readMore:"خوێندنەوەی وتار ←",
 navTopics:"بەشەکان",navAbout:"دەربارە",navContact:"پەیوەندی",
 eyebrow:"ماڵپەڕی فەرمی",name:"نیهاد ئاراس کەریم",role:"نووسەر و ڕاڤەکاری سیاسی",
@@ -256,26 +309,37 @@ footer:"ماڵپەڕی سەربەخۆی هەواڵ و ڕاڤەکاری سیاس�
 
 en: {
 navHome:"Home",navArticles:"Articles",latestTitle:"Latest articles",
+
+a6Cat:"NEWS & POLITICAL ANALYSIS",
+a6Title:"Khor Mor: An Attack on Kurdistan's Energy and Electricity",
+a6Excerpt:"A report on the attack and its impact on gas supplies and electricity generation in the Kurdistan Region.",
+a6By:"By Nihad Aras Kareem",
+
 a1Cat:"POLITICAL ANALYSIS",
 a1Title:"Shabana Mahmood’s New Immigration Decisions: Plenty of Announcements, But When Will They Be Implemented?",
 a1Excerpt:"Have these decisions actually come into force, or are they still announcements and political statements?",
 a1By:"By Nihad Aras Kareem",
+
 a2Cat:"POLITICAL ANALYSIS",
 a2Title:"An Analysis of the Current Situation of Kurds in Syria and Iraq",
 a2Excerpt:"An examination of Kurdish identity in Syria, relations between the Kurdistan Region and Baghdad, and internal challenges in Kurdistan.",
 a2By:"By Nihad Aras Kareem · 21 January 2026",
+
 a3Cat:"POLITICAL ANALYSIS",
 a3Title:"The Ongoing Conflict in the Middle East and Its Impact on Iraq and Kurdistan",
 a3Excerpt:"An analysis of how the ongoing regional conflict affects Iraq and the Kurdistan Region.",
 a3By:"By Nihad Aras Kareem",
+
 a4Cat:"POLITICAL ANALYSIS",
 a4Title:"Kurdistan Between Political Partnership and the Division of Power",
 a4Excerpt:"An analysis of the political situation in the Kurdistan Region and partnership between its political parties.",
 a4By:"By Nihad Aras Kareem",
+
 a5Cat:"HISTORY & POLITICAL ANALYSIS",
 a5Title:"16 October 2017: How Was Kirkuk Lost?",
 a5Excerpt:"An examination of the events of 16 October 2017, the situation in Kirkuk, and their political and historical consequences.",
 a5By:"By Nihad Aras Kareem",
+
 readMore:"Read article →",
 navTopics:"Sections",navAbout:"About",navContact:"Contact",
 eyebrow:"OFFICIAL WEBSITE",name:"Nihad Aras Kareem",role:"Writer & Political Commentator",
@@ -292,26 +356,37 @@ footer:"Independent news and political commentary",facebookBtn:"Follow me on Fac
 
 ar: {
 navHome:"الرئيسية",navArticles:"المقالات",latestTitle:"أحدث المقالات",
+
+a6Cat:"أخبار وتحليل سياسي",
+a6Title:"خور مور؛ هجوم على الطاقة والكهرباء في كردستان",
+a6Excerpt:"تقرير عن الهجوم وتأثيره على إمدادات الغاز وتوليد الكهرباء في إقليم كردستان.",
+a6By:"بقلم: نهاد آراس كريم",
+
 a1Cat:"تحليلات سياسية",
 a1Title:"قرارات شبانة محمود الجديدة بشأن الهجرة؛ تصريحات كثيرة، ولكن متى يبدأ التنفيذ؟",
 a1Excerpt:"هل دخلت هذه القرارات حيز التنفيذ فعلياً، أم أنها لا تزال مجرد إعلانات وتصريحات إعلامية؟",
 a1By:"بقلم: نهاد آراس كريم",
+
 a2Cat:"تحليل سياسي",
 a2Title:"تحليل الوضع الراهن للكرد في سوريا والعراق",
 a2Excerpt:"قراءة في الهوية الكردية في سوريا، والعلاقة بين إقليم كردستان وبغداد، والتحديات الداخلية في كردستان.",
 a2By:"بقلم: نهاد آراس كريم · 21 يناير 2026",
+
 a3Cat:"تحليل سياسي",
 a3Title:"الصراع المستمر في الشرق الأوسط وتأثيره على العراق وكردستان",
 a3Excerpt:"تحليل تأثير الصراع الإقليمي المستمر على العراق وإقليم كردستان.",
 a3By:"بقلم: نهاد آراس كريم",
+
 a4Cat:"تحليل سياسي",
 a4Title:"كردستان بين الشراكة السياسية وانقسام السلطة",
 a4Excerpt:"تحليل للوضع السياسي في إقليم كردستان والشراكة بين القوى السياسية.",
 a4By:"بقلم: نهاد آراس كريم",
+
 a5Cat:"التاريخ والتحليل السياسي",
 a5Title:"16 تشرين الأول 2017: كيف فقدت كركوك؟",
 a5Excerpt:"قراءة في أحداث 16 تشرين الأول 2017، ووضع كركوك، وتداعياتها السياسية والتاريخية.",
 a5By:"بقلم: نهاد آراس كريم",
+
 readMore:"اقرأ المقال ←",
 navTopics:"الأقسام",navAbout:"من أنا",navContact:"اتصل بي",
 eyebrow:"الموقع الرسمي",name:"نهاد آراس كريم",role:"كاتب ومحلل سياسي",
@@ -325,6 +400,7 @@ contactTitle:"اتصل بي",contactText:"ستضاف هنا لاحقاً معل�
 domainNote:"النطاق المقترح: nihadkareem.com — يجب التحقق من توفره وتسجيله.",
 footer:"منصة مستقلة للأخبار والتحليل السياسي",facebookBtn:"تابعني على فيسبوك"
 }
+
 };
 
 function setLang(l){
@@ -366,5 +442,6 @@ document.querySelectorAll("[data-scroll]").forEach(b=>{
 
 document.getElementById("year").textContent=new Date().getFullYear();
 </script>
+
 </body>
 </html>
