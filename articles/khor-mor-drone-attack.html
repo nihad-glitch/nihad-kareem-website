@@ -540,6 +540,7 @@ footer span{color:var(--gold)}
   <div>© <span id="year"></span> Nihad Aras Kareem</div>
 </footer>
 
+
 <script>
 const translations={
 ku:{
@@ -548,8 +549,7 @@ ku:{
  meta:"نووسەر: نیهاد ئاراس کەریم · ٩ی تشرینی دووەمی ٢٠٢٦",
  imageNote:"وێنەیەکی وێنەسازی کراوە و وێنەی ڕاستەوخۆی شوێنی ڕووداوەکە نییە.",
  sourcesTitle:"سەرچاوەکان",
- author:"ئامادەکردنی: نیهاد ئاراس کەریم",
- back:"← گەڕانەوە بۆ سەرەکی"
+ author:"ئامادەکردنی: نیهاد ئاراس کەریم"
 },
 en:{
  category:"NEWS & POLITICAL ANALYSIS",
@@ -557,8 +557,7 @@ en:{
  meta:"By Nihad Aras Kareem · 9 November 2026",
  imageNote:"Illustrative artwork. This is not an authentic photograph of the incident.",
  sourcesTitle:"Sources",
- author:"Prepared by: Nihad Aras Kareem",
- back:"← Back to homepage"
+ author:"Prepared by: Nihad Aras Kareem"
 },
 ar:{
  category:"أخبار وتحليل سياسي",
@@ -566,10 +565,65 @@ ar:{
  meta:"بقلم نهاد آراس كريم · 9 تشرين الثاني 2026",
  imageNote:"صورة توضيحية مولّدة وليست صورة حقيقية لموقع الحادث.",
  sourcesTitle:"المصادر",
- author:"إعداد: نهاد آراس كريم",
- back:"العودة إلى الصفحة الرئيسية ←"
+ author:"إعداد: نهاد آراس كريم"
 }
 };
+
+function setLanguage(lang){
+ if(!translations[lang])lang="ku";
+
+ document.documentElement.lang=lang;
+ document.documentElement.dir=lang==="en"?"ltr":"rtl";
+
+ document.querySelectorAll("[data-i18n]").forEach(el=>{
+   const key=el.dataset.i18n;
+   if(translations[lang][key]){
+     el.textContent=translations[lang][key];
+   }
+ });
+
+ document.querySelectorAll("[data-content]").forEach(el=>{
+   el.hidden=el.dataset.content!==lang;
+ });
+
+ document.querySelectorAll("[data-lang]").forEach(btn=>{
+   btn.classList.toggle("active",btn.dataset.lang===lang);
+ });
+
+ // Keep the homepage link in Kurdish in every language
+ const back=document.querySelector(".back");
+ if(back){
+   back.textContent="← گەڕانەوە بۆ سەرەکی";
+ }
+
+ try{
+   localStorage.setItem("nk-lang",lang);
+ }catch(e){}
+}
+
+document.querySelectorAll("[data-lang]").forEach(btn=>{
+ btn.addEventListener("click",()=>{
+   setLanguage(btn.dataset.lang);
+ });
+});
+
+let initialLang="ku";
+
+try{
+ initialLang=localStorage.getItem("nk-lang")||"ku";
+}catch(e){}
+
+const queryLang=new URLSearchParams(location.search).get("lang");
+
+if(queryLang && translations[queryLang]){
+ initialLang=queryLang;
+}
+
+setLanguage(initialLang);
+
+document.getElementById("year").textContent=new Date().getFullYear();
+</script>
+
 
 function setLanguage(lang){
  if(!translations[lang])lang="ku";
